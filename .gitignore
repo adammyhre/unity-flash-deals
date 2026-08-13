@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+config.json
+*.log
+playwright-report/
+test-results/
+.auth/
+storage-state.json
+discovery*.json
+results.json
+scripts/discovery*.json

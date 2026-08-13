@@ -1,0 +1,20 @@
+{
+  "name": "unity-flash-deals",
+  "version": "1.0.0",
+  "description": "Playwright scraper for Unity Asset Store flash deals above a configurable discount threshold",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "scrape": "tsx src/index.ts"
+  },
+  "keywords": ["playwright", "unity", "asset-store"],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "playwright": "^1.51.0"
+  }
+}

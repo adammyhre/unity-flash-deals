@@ -1,0 +1,8 @@
+{
+  "email": "your-unity-email@example.com",
+  "password": "your-password-here",
+  "minDiscountPercent": 70,
+  "flashDealsUrl": "https://assetstore.unity.com/listing#f-ec_sale_filters=on_sale,flash_deal",
+  "headless": false,
+  "slowMo": 0
+}
