@@ -2,7 +2,7 @@
 
 Playwright TypeScript scraper for [Unity Asset Store](https://assetstore.unity.com/) flash deals. It signs in with your Unity ID (optional session reuse), walks the flash deals listing with pagination, skips assets you already own, and writes matching deals to the console and `results.json`.
 
-<img width="3284" height="579" alt="image" src="https://github.com/user-attachments/assets/5bdac6a3-9138-434f-b6a9-0d62d9bda963" />
+<img width="3284" height="579" alt="image" src="https://github.com/user-attachments/assets/b1409dfd-6a97-49d5-918d-abecc03c4eb5" />
 
 ## Features
 

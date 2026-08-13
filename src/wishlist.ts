@@ -74,13 +74,8 @@ export async function isOnWishlist(page: Page): Promise<boolean | null> {
       if (Date.now() - started >= 4_000 && Date.now() - falseSince >= 2_000) {
         return false;
       }
-<<<<<<< HEAD
-    } else if (state !== null) {
-=======
-    } else if (state === null) {
-      // keep waiting through transient navigations
     } else {
->>>>>>> e208ee0 (Add wishlist)
+      // null — keep waiting through transient navigations / context loss
       falseSince = null;
     }
 
@@ -101,10 +96,7 @@ async function openDealPage(page: Page, url: string): Promise<void> {
     waitUntil: "domcontentloaded",
     timeout: 60_000,
   });
-<<<<<<< HEAD
-=======
   // Product pages often soft-redirect once; wait for URL/package id to settle.
->>>>>>> e208ee0 (Add wishlist)
   await page.waitForLoadState("load").catch(() => undefined);
   await page.waitForTimeout(1500);
   await dismissCookieBanner(page);
@@ -124,15 +116,10 @@ export async function enrichDealsWithWishlist(
     const deal = deals[i]!;
     process.stdout.write(`  [${i + 1}/${deals.length}] ${deal.name.slice(0, 60)}... `);
 
-<<<<<<< HEAD
     let done = false;
     for (let attempt = 1; attempt <= 2 && !done; attempt++) {
       try {
         await openDealPage(page, deal.url);
-=======
-    try {
-      await openDealPage(page, deal.url);
->>>>>>> e208ee0 (Add wishlist)
 
         if (await pageShowsOwned(page)) {
           skippedOwned++;
